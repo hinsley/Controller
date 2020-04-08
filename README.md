@@ -1,7 +1,7 @@
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/hinsley/Controller) 
 
 # Controller
-SCADA
+Supervisory Control And Data Acquisition
 
 ## Purpose
 Existing SCADA software feels clunky. I wanted something that felt right to me.
