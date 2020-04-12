@@ -7,7 +7,7 @@
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
-// 
+//
 // This program is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -23,12 +23,12 @@ use cpython::{PyModule, PyResult, Python};
 /// Courtesy https://web.archive.org/web/20200409103725/https://users.rust-lang.org/t/callable-from-python-inside-rust/18866/16
 ///
 /// Import a module from the given file contents.
-/// 
+///
 /// This is a wrapper around `PyModule::new` and `Python::run` which simulates
 /// the behavior of the builtin function `exec`. `name` will be used as the
 /// module's `__name__`, but is not otherwise important (it does not need
 /// to match the file's name).
-/// 
+///
 /// Note this compiles and executes the module code each time it is called, as it
 /// bypasses the regular import mechanism. No entry is added to the cache in
 /// `sys.modules`.
