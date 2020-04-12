@@ -2,7 +2,7 @@
 
 extern crate cpython;
 
-use cpython::{Python, PyResult, PyModule};
+use cpython::{PyModule, PyResult, Python};
 
 const FIBO_PY: &'static str = include_str!("python_scripts/fibo.py");
 
@@ -17,7 +17,10 @@ fn example(py: Python<'_>) -> PyResult<()> {
     let m = module_from_str(py, "fibo", FIBO_PY)?;
 
     let out: i32 = m.call(py, "fib", (2,), None)?.extract(py)?;
-    println!("successfully found fibo.py at compiletime.  Output: {:?}", out);
+    println!(
+        "successfully found fibo.py at compiletime.  Output: {:?}",
+        out
+    );
 
     Ok(())
 }
