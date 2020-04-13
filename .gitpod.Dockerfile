@@ -2,8 +2,8 @@ FROM gitpod/workspace-full-vnc
                     
 USER gitpod
 
-RUN apt-get update \
-    && apt-get install libgtk-3-dev
+RUN sudo apt-get update \
+    && sudo apt-get install libgtk-3-dev
 
 # TODO: Steps 1 and 2 from https://github.com/sciter-sdk/rust-sciter#getting-started
 
