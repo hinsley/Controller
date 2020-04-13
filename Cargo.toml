@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 cpython = "0.5"
+sciter-rs = "*"
