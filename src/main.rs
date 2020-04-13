@@ -1,6 +1,7 @@
 // Courtesy https://web.archive.org/web/20200409103725/https://users.rust-lang.org/t/callable-from-python-inside-rust/18866/16
 
 extern crate cpython;
+extern crate sciter;
 
 use cpython::{PyResult, Python};
 
@@ -13,6 +14,11 @@ fn main() {
     let py = gil.python();
 
     example(py).unwrap();
+
+    // Sciter demo.
+    let mut frame = sciter::Window::new();
+    frame.load_file("minimal.htm");
+    frame.run_app();
 }
 
 fn example(py: Python<'_>) -> PyResult<()> {
