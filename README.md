@@ -9,6 +9,7 @@ Existing SCADA software feels clunky. I wanted something that felt right to me.
 
 ## Roadmap
 - [X] Get CI set up
+- [ ] Get code coverage (codecov.io) set up
 - [ ] Get UI toolkit set up
 - [ ] Get scripting set up
 - [ ] Get some hardware working (Labjack?)
