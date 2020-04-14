@@ -10,4 +10,4 @@ RUN wget https://sciter.com/sdk/sciter-sdk.zip \
     && unzip sciter-sdk.zip -d sciter-sdk \
     && rm sciter-sdk.zip
 
-ENV PATH="/home/gitpod/sciter-sdk/bin.lnx:${PATH}"
+ENV PATH="${PATH}:/home/gitpod/sciter-sdk/bin.lnx"
